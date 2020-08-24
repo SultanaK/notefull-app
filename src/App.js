@@ -10,7 +10,7 @@ import AddFolder from './AddFolder/AddFolder';
 import AddNote from './AddNote/AddNote';
 import config from './config';
 import './App.css';
-//import Header from './Header/Header'
+import NotefulError from './NotefulError/NotefulError'
 
 
 
@@ -152,28 +152,39 @@ class App extends Component {
       addErrorNotes: this.addErrorNotes,
       notesError: this.notesError
     }
-    
-      return (
-      
-        <NotefulContext.Provider value={contextValue}>
-          <div className="App">
+
+    return (
+
+      <NotefulContext.Provider value={contextValue}>
+        <div className="App">
+          <NotefulError>
             <header className="header">
               <Link to='/'><h1>Noteful</h1></Link>
               <p>A place for organizing your notes.</p>
             </header>
+          </NotefulError>
+        ``
             <main className="mainpage">
-              <div className="sidebar">
+            <div className="sidebar">
+              <NotefulError>
+
                 {this.renderSidebar()}
-              </div>
-              <div className="main">
+              </NotefulError>
+
+            </div>
+            <div className="main">
+              <NotefulError>
+
                 {this.renderMain()}
-              </div>
-            </main>
-          </div>
-        </NotefulContext.Provider>
-      
-      )
-    
+              </NotefulError>
+
+            </div>
+          </main>
+        </div>
+      </NotefulContext.Provider>
+
+    )
+
   }
 }
 

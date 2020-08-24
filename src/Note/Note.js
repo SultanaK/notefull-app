@@ -50,7 +50,7 @@ export default class Note extends React.Component {
                     type="button"
                     id="delete-note-link-little"
                     onClick={this.handleDeleteNote}>
-                        Delete Not
+                        Delete Note
                              
                     </button>
                 

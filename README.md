@@ -5,7 +5,7 @@ Note-taking application, the user can add/delete notes and organize them in fold
 ## Working Prototype
 [Noteful API Repo](https://github.com/SultanaK/Noteful-Server)
 
-[Noteful React Repo](https://github.com/SultanaK/notefull-app)
+[Noteful-App React Repo](https://github.com/SultanaK/notefull-app)
 
 [Live Noteful Application](https://noteful-app)
 
