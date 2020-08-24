@@ -7,7 +7,7 @@ Note-taking application, the user can add/delete notes and organize them in fold
 
 [Noteful-App React Repo](https://github.com/SultanaK/notefull-app)
 
-[Live Noteful Application](https://noteful-app)
+[Live Noteful Application](https://noteful-app-five-theta.vercel.app/)
 
 ## Live Screenshots
 
