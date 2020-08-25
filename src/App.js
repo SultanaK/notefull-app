@@ -154,7 +154,6 @@ class App extends Component {
     }
 
     return (
-
       <NotefulContext.Provider value={contextValue}>
         <div className="App">
           <NotefulError>

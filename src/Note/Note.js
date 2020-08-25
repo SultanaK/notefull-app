@@ -3,11 +3,12 @@ import NotefulContext from '../NotefulContext';
 import { Link } from 'react-router-dom';
 import config from '../config';
 import moment from 'moment'
+import PropTypes from 'prop-types';
 
 export default class Note extends React.Component {
     static defaultProps = {
         handleDeleteNote: () => { },
-        onDeleteNote: () => { },
+        //onDeleteNote: () => { },
         match: {
             params: {}
         }
@@ -36,7 +37,6 @@ export default class Note extends React.Component {
     }
 
     render() {
-
         return (
             <div className="note">
                 <div key={this.props.id}>         
@@ -50,18 +50,19 @@ export default class Note extends React.Component {
                     type="button"
                     id="delete-note-link-little"
                     onClick={this.handleDeleteNote}>
-                        Delete Note
-                             
+                        Delete Note                    
                     </button>
                 
             </div>
-            </div >
+            </div>
         )
     }
 }
 
-Note.defaultProps = {
-    notes: [],
-    content: "",
-    name: "",
+
+Note.propTypes = { 
+    id: PropTypes.number.isRequired,
+    content: PropTypes.string,
+    name: PropTypes.string,
+    modified: PropTypes.string,
 }

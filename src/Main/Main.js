@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NotefulContext from '../NotefulContext';
 import Note from '../Note/Note'
-
+import { checkPropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 export default class Main extends React.Component {
     static defaultProps = {
         match: {
@@ -44,4 +45,8 @@ export default class Main extends React.Component {
             </div>
         );
     }
+}
+
+Main.propTypes = {
+    match: PropTypes.any, 
 }
