@@ -48,5 +48,5 @@ export default class Main extends React.Component {
 }
 
 Main.propTypes = {
-    match: PropTypes.any, 
+    match: PropTypes.any,
 }
